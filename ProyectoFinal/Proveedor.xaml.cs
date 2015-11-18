@@ -16,18 +16,13 @@ using System.Windows.Shapes;
 namespace ProyectoFinal
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Proveedor.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Proveedor : Page
     {
-        public MainWindow()
+        public Proveedor()
         {
             InitializeComponent();
-        }
-
-        private void Proveedor_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }
