@@ -27,7 +27,20 @@ namespace ProyectoFinal
 
         private void Proveedor_Click(object sender, RoutedEventArgs e)
         {
+            VentanaProvedor vta = new VentanaProvedor();
+            vta.Show();
+        }
 
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            VentanaServicio vta = new VentanaServicio();
+            vta.Show();
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            VentanaAsistente vta = new VentanaAsistente();
+            vta.Show();
         }
     }
 }

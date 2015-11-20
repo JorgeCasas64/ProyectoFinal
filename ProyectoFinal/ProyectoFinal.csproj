@@ -68,10 +68,16 @@
       <DependentUpon>201511181637177_Correxion.cs</DependentUpon>
     </Compile>
     <Compile Include="Proveedor.cs" />
-    <Compile Include="Proveedor.xaml.cs">
-      <DependentUpon>Proveedor.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Servicio.cs" />
+    <Compile Include="VentanaAsistente.xaml.cs">
+      <DependentUpon>VentanaAsistente.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VentanaProvedor.xaml.cs">
+      <DependentUpon>VentanaProvedor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VentanaServicio.xaml.cs">
+      <DependentUpon>VentanaServicio.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -86,7 +92,15 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Proveedor.xaml">
+    <Page Include="VentanaAsistente.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VentanaProvedor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VentanaServicio.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
