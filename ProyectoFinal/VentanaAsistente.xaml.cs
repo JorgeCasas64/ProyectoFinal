@@ -38,6 +38,14 @@ namespace ProyectoFinal
                 db.Asistente.Add(asis);
                 db.SaveChanges();
                 MessageBox.Show("Se ingresaron los datos Con Exito!");
+                var registros = from s in db.Asistente
+
+                                select s;
+
+                dbgrid.ItemsSource = registros.ToList();
+                txtnombre.Clear();
+                txtape.Clear();
+                txttel.Clear();
             }
             else
             {
@@ -58,6 +66,13 @@ namespace ProyectoFinal
                     db.Asistente.Remove(asis);
                     db.SaveChanges();
                     MessageBox.Show("Se Elimino con exito!");
+                    var registros = from s in db.Asistente
+
+                                    select s;
+
+                    dbgrid.ItemsSource = registros.ToList();
+                    txtid.Clear();
+                    
                 }
             }
             else
@@ -81,6 +96,15 @@ namespace ProyectoFinal
                     asis.Telefono = txttel.Text;
                     db.SaveChanges();
                     MessageBox.Show("Los cambios Fueron Exitosos!");
+                    var registros = from s in db.Asistente
+
+                                    select s;
+
+                    dbgrid.ItemsSource = registros.ToList();
+                    txtid.Clear();
+                    txtnombre.Clear();
+                    txtape.Clear();
+                    txttel.Clear();
                 }
                 else
                 {

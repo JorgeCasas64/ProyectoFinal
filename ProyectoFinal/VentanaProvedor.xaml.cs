@@ -28,16 +28,25 @@ namespace ProyectoFinal
         {
             //instanciasr base de datos
 
-            if (Regex.IsMatch(txtnombre.Text, @"^[a-zA-Z]+$") && Regex.IsMatch(txtdirecion.Text, @"^[a-zA-Z]+$") && Regex.IsMatch(txtgiro.Text, @"^[a-zA-Z]+$"))
+            if (Regex.IsMatch(txtnombre.Text, @"^[a-zA-Z]+$") && Regex.IsMatch(txtdirecion.Text, @"^[a-zA-Z]+$"))
             {
                 ConexionBD db = new ConexionBD();
                 Proveedor prov = new Proveedor();
                 prov.NombreProveedor = txtnombre.Text;
                 prov.Direccion = txtdirecion.Text;
-                prov.Giro = txtgiro.Text;
+                prov.Giro = combogiro.Text;
                 db.Proveedor.Add(prov);
                 db.SaveChanges();
                 MessageBox.Show("Se ingresaron los datos Con Exito!");
+                var registros = from s in db.Proveedor
+
+                                select s;
+
+                dbgrid.ItemsSource = registros.ToList();
+
+                txtnombre.Clear();
+                txtdirecion.Clear();
+                
             }
             else
             {
@@ -111,7 +120,7 @@ namespace ProyectoFinal
                 {
                     prov.NombreProveedor = txtnombre.Text;
                     prov.Direccion = txtdirecion.Text;
-                    prov.Giro = txtgiro.Text;
+                    prov.Giro = combogiro.Text;
                     db.SaveChanges();
                     MessageBox.Show("Los cambios Fueron Exitosos!");
                 }
@@ -120,6 +129,11 @@ namespace ProyectoFinal
                     MessageBox.Show("INGRESE BIEN LOS DATOS");
                 }
             }
+        }
+
+        private void ComboBox_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }

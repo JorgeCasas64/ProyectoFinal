@@ -29,15 +29,24 @@ namespace ProyectoFinal
         {
             //instanciasr base de datos
 
-            if (Regex.IsMatch(txtnombre.Text, @"^[a-zA-Z]+$") && Regex.IsMatch(txtprecio.Text, @"^\d+$"))
+            if (Regex.IsMatch(txtnombre.Text, @"^[a-zA-Z]+$") && Regex.IsMatch(txtprecio.Text, @"^\d+$") && Regex.IsMatch(comboprove.Text, @"^[a-zA-Z]+$"))
             {
                 ConexionBD db = new ConexionBD();
                 Servicio serv = new Servicio();
                 serv.NombreServicio = txtnombre.Text;
                 serv.Precio = float.Parse(txtprecio.Text);
+                serv.ProveedorIdProveedor = int.Parse(comboprove.SelectedValue.ToString());
                 db.servicio.Add(serv);
                 db.SaveChanges();
                 MessageBox.Show("Se ingresaron los datos Con Exito!");
+                var registros = from s in db.servicio
+
+                                select s;
+
+                dbgrid.ItemsSource = registros.ToList();
+                txtnombre.Clear();
+                txtprecio.Clear();
+             
             }
             else
             {
@@ -58,11 +67,17 @@ namespace ProyectoFinal
                     db.servicio.Remove(serv);
                     db.SaveChanges();
                     MessageBox.Show("Se Elimino con exito!");
+                    var registros = from s in db.servicio
+
+                                    select s;
+
+                    dbgrid.ItemsSource = registros.ToList();
+                    txtid.Clear();
                 }
             }
             else
             {
-                MessageBox.Show("SOLO NUMEROS");
+                MessageBox.Show("Ingresa los datos Correctos");
             }
         }
 
@@ -80,6 +95,13 @@ namespace ProyectoFinal
                     serv.Precio = float.Parse(txtprecio.Text);
                     db.SaveChanges();
                     MessageBox.Show("Los cambios Fueron Exitosos!");
+                    var registros = from s in db.servicio
+
+                                    select s;
+
+                    dbgrid.ItemsSource = registros.ToList();
+                    txtnombre.Clear();
+                    txtprecio.Clear();
                 }
                 else
                 {
@@ -117,6 +139,30 @@ namespace ProyectoFinal
                             select s;
 
             dbgrid.ItemsSource = registros.ToList();
+        }
+
+        private void ComboBox_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
+        {
+
+
+        }
+
+        private void Grid_Loaded_1(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Window_Loaded_1(object sender, RoutedEventArgs e)
+        {
+            ConexionBD db = new ConexionBD();
+            var registros = from s in db.Proveedor
+
+                            select s;
+
+            comboprove.ItemsSource = registros.ToList();
+            comboprove.DisplayMemberPath = "NombreProveedor";
+            comboprove.SelectedValuePath="IdProveedor";
+
         }
     }
 }

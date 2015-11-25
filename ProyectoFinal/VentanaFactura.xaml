@@ -1,0 +1,12 @@
+﻿<Window x:Class="ProyectoFinal.VentanaFactura"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="VentanaFactura" Height="411.94" Width="494.029">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="181*"/>
+            <ColumnDefinition Width="62*"/>
+        </Grid.ColumnDefinitions>
+
+    </Grid>
+</Window>

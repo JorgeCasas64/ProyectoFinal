@@ -1,7 +1,7 @@
 ﻿<Window x:Class="ProyectoFinal.VentanaAsistente"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="VentanaAsistente" Height="589.553" Width="491.045">
+        Title="VentanaAsistente" Height="527.553" Width="491.045">
     <Grid>
         <Button Content="Guardar" HorizontalAlignment="Left" Margin="324,48,0,0" VerticalAlignment="Top" Width="75" Height="20" Click="Button_Click_1"/>
         <Label Content="Bienveidno a Asistente" HorizontalAlignment="Left" Margin="88,10,0,0" VerticalAlignment="Top" Height="26" Width="136"/>
@@ -14,7 +14,7 @@
         <Label Content="Telefono:" HorizontalAlignment="Left" Margin="24,180,0,0" VerticalAlignment="Top" Height="29" Width="60"/>
         <TextBox x:Name="txttel" HorizontalAlignment="Left" Height="23" Margin="88,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Button Content="Eliminar " HorizontalAlignment="Left" Margin="324,147,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_2"/>
-        <DataGrid x:Name="dbgrid" HorizontalAlignment="Left" Margin="24,336,0,0" VerticalAlignment="Top" Height="143" Width="254"/>
+        <DataGrid x:Name="dbgrid" HorizontalAlignment="Left" Margin="10,230,0,0" VerticalAlignment="Top" Height="171" Width="281"/>
         <Button Content="Consultartodos" HorizontalAlignment="Left" Margin="324,407,0,0" VerticalAlignment="Top" Width="125" Click="Button_Click_5" Height="72"/>
         <Button Content="Consutlar Uno" HorizontalAlignment="Left" Margin="324,308,0,0" VerticalAlignment="Top" Width="125" Height="68" RenderTransformOrigin="0.473,-0.02" Click="Button_Click_3"/>
         <Button Content="Editar" HorizontalAlignment="Left" Margin="324,230,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_4"/>

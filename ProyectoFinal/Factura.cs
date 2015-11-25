@@ -10,8 +10,8 @@ namespace ProyectoFinal
     {
      [Key]
      public int IdFactura { get; set; }
-     public virtual int IdAsistente { get; set; }
+     public virtual Asistente AsistenteId { get; set; }
      public virtual int IdServicio { get; set; }
-     
+     public virtual Proveedor ProveedorId { get; set; }
     }
 }
