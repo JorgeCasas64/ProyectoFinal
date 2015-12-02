@@ -12,6 +12,7 @@ namespace ProyectoFinal
       public int IdServicio { get; set; }
       public String NombreServicio { get; set; }
       public float Precio { get; set; }
+
       public virtual int ProveedorIdProveedor { get; set; }
       public virtual ICollection<Factura> Facturas { get; set; }
     }

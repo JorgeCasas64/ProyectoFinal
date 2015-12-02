@@ -42,5 +42,11 @@ namespace ProyectoFinal
             VentanaAsistente vta = new VentanaAsistente();
             vta.Show();
         }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            VentanaFactura vta = new VentanaFactura();
+            vta.Show();
+        }
     }
 }

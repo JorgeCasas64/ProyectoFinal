@@ -13,5 +13,7 @@ namespace ProyectoFinal
      public virtual Asistente AsistenteId { get; set; }
      public virtual int IdServicio { get; set; }
      public virtual Proveedor ProveedorId { get; set; }
+     public DateTime Fecha { get; set; }
+     public int ServicioIdServicio { get; set; }
     }
 }

@@ -3,21 +3,24 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="VentanaServicio" Height="480.865" Width="513.432" Loaded="Window_Loaded_1">
     <Grid Loaded="Grid_Loaded_1">
-        <Button Content="Guardar" HorizontalAlignment="Left" Margin="324,48,0,0" VerticalAlignment="Top" Width="75" Height="20" Click="Button_Click_1"/>
-        <Label Content="Bienveidno a Servicio" HorizontalAlignment="Left" Margin="182,10,0,0" VerticalAlignment="Top" Height="26" Width="136"/>
-        <TextBox x:Name="txtid" HorizontalAlignment="Left" Height="23" Margin="125,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtnombre" HorizontalAlignment="Left" Height="23" Margin="125,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label Content="NombreServicio:" HorizontalAlignment="Left" Margin="28,90,0,0" VerticalAlignment="Top"/>
+        <Button Content="Guardar" HorizontalAlignment="Left" Margin="342,101,0,0" VerticalAlignment="Top" Width="75" Height="20" Click="Button_Click_1"/>
+        <Label Content="Bienvenido a Servicio" HorizontalAlignment="Left" Margin="182,10,0,0" VerticalAlignment="Top" Height="26" Width="136"/>
+        <TextBox x:Name="txtid" HorizontalAlignment="Left" Height="23" Margin="110,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtnombre" HorizontalAlignment="Left" Height="23" Margin="125,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="NombreServicio:" HorizontalAlignment="Left" Margin="24,110,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtprecio" HorizontalAlignment="Left" Height="23" Margin="125,141,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="Precio:" HorizontalAlignment="Left" Margin="43,141,0,0" VerticalAlignment="Top"/>
-        <Label Content="ID" HorizontalAlignment="Left" Margin="84,48,0,0" VerticalAlignment="Top"/>
-        <Button Content="Eliminar " HorizontalAlignment="Left" Margin="324,117,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_2"/>
+        <Label Content="ID" HorizontalAlignment="Left" Margin="43,60,0,0" VerticalAlignment="Top"/>
+        <Button Content="Eliminar " HorizontalAlignment="Left" Margin="342,147,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_2"/>
         <Button Content="Consultartodos" HorizontalAlignment="Left" Margin="324,364,0,0" VerticalAlignment="Top" Width="125" Click="Button_Click_5" Height="72"/>
         <Button Content="Consutlar Uno" HorizontalAlignment="Left" Margin="324,259,0,0" VerticalAlignment="Top" Width="125" Height="68" RenderTransformOrigin="0.473,-0.02" Click="Button_Click_3"/>
-        <Button Content="Editar" HorizontalAlignment="Left" Margin="324,193,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_4"/>
+        <Button Content="Editar" HorizontalAlignment="Left" Margin="342,202,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_4"/>
         <DataGrid x:Name="dbgrid" HorizontalAlignment="Left" Margin="10,225,0,0" VerticalAlignment="Top" Height="215" Width="296"/>
         <Label Content="Proveedor ID:" HorizontalAlignment="Left" Margin="24,187,0,0" VerticalAlignment="Top"/>
         <ComboBox x:Name="comboprove" HorizontalAlignment="Left" Margin="125,187,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged_1"/>
+        <Label Content="INGRESA ID PARA BUSCAR ELIMINAR O EDITAR" HorizontalAlignment="Left" Margin="24,36,0,0" VerticalAlignment="Top"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="240,48,0,0" VerticalAlignment="Top"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="6" Margin="0,90,0,0" VerticalAlignment="Top" Width="505"/>
 
     </Grid>
 </Window>

@@ -4,9 +4,10 @@
         Title="MainWindow" Height="260" Width="466">
     <Grid>
         <Label Content="MENU&#xD;&#xA;HelpMeApp&#xD;&#xA;" HorizontalAlignment="Left" Margin="181,11,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="Proveedor" Content="Proveedor" HorizontalAlignment="Left" Margin="258,78,0,0" VerticalAlignment="Top" Width="88" Click="Proveedor_Click" Height="44"/>
-        <Button Content="Servicio" HorizontalAlignment="Left" Margin="154,78,0,0" VerticalAlignment="Top" Width="88" Click="Button_Click_1" Height="44"/>
-        <Button Content="Asistente" HorizontalAlignment="Left" Margin="62,78,0,0" VerticalAlignment="Top" Width="76" Click="Button_Click_2" Height="44"/>
+        <Button x:Name="Proveedor" Content="Proveedor" HorizontalAlignment="Left" Margin="243,78,0,0" VerticalAlignment="Top" Width="88" Click="Proveedor_Click" Height="44"/>
+        <Button Content="Servicio" HorizontalAlignment="Left" Margin="139,78,0,0" VerticalAlignment="Top" Width="88" Click="Button_Click_1" Height="44"/>
+        <Button Content="Asistente" HorizontalAlignment="Left" Margin="42,78,0,0" VerticalAlignment="Top" Width="76" Click="Button_Click_2" Height="44"/>
+        <Button Content="Factura" HorizontalAlignment="Left" Margin="336,78,0,0" VerticalAlignment="Top" Width="88" Height="44" Click="Button_Click_3"/>
 
     </Grid>
 </Window>

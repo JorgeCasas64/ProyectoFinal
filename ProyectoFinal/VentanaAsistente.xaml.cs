@@ -73,7 +73,7 @@ namespace ProyectoFinal
                     dbgrid.ItemsSource = registros.ToList();
                     txtid.Clear();
                     
-                }
+                } 
             }
             else
             {

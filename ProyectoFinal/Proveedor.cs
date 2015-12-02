@@ -14,6 +14,7 @@ namespace ProyectoFinal
         public String NombreProveedor { get; set; }
         public String Direccion { get; set; }
         public String Giro { get; set; }
+
         public virtual ICollection<Servicio> Servicios {get;set;}
         public virtual ICollection<Factura> Factura { get; set; }
     }

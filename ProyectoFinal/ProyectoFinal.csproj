@@ -75,6 +75,14 @@
     <Compile Include="Migrations\201511251625495_factura-proveedorDos.Designer.cs">
       <DependentUpon>201511251625495_factura-proveedorDos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201512012102533_ultima.cs" />
+    <Compile Include="Migrations\201512012102533_ultima.Designer.cs">
+      <DependentUpon>201512012102533_ultima.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201512020000060_ultimados.cs" />
+    <Compile Include="Migrations\201512020000060_ultimados.Designer.cs">
+      <DependentUpon>201512020000060_ultimados.cs</DependentUpon>
+    </Compile>
     <Compile Include="Proveedor.cs" />
     <Compile Include="Servicio.cs" />
     <Compile Include="VentanaAsistente.xaml.cs">
@@ -150,6 +158,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201511251625495_factura-proveedorDos.resx">
       <DependentUpon>201511251625495_factura-proveedorDos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201512012102533_ultima.resx">
+      <DependentUpon>201512012102533_ultima.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201512020000060_ultimados.resx">
+      <DependentUpon>201512020000060_ultimados.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

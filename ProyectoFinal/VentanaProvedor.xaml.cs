@@ -68,6 +68,13 @@ namespace ProyectoFinal
                     db.Proveedor.Remove(prov);
                     db.SaveChanges();
                     MessageBox.Show("Se Elimino con exito!");
+                    var registros = from s in db.Proveedor
+
+                                    select s;
+
+                    dbgrid.ItemsSource = registros.ToList();
+
+                    txtid.Clear();
                 }
             }
             else
@@ -132,6 +139,16 @@ namespace ProyectoFinal
         }
 
         private void ComboBox_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void Grid_Loaded_1(object sender, RoutedEventArgs e)
         {
 
         }
